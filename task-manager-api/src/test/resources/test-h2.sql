@@ -1,0 +1,1 @@
+insert into task (description) values ('Testing'), ('is very'), ('important')

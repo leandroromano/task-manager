@@ -1,0 +1,13 @@
+<form autocomplete="off" (ngSubmit)="save()" [formGroup]="form">
+    <div class="input-group">
+        <input class="form-control"
+               type="text"
+               maxlength="45"
+               placeholder="What to do next?"
+               formControlName="task">
+        <button class="btn btn-primary">Add</button>
+    </div>
+    <small *ngIf="invalidTask" class="text-danger">
+        Task is required
+    </small>
+</form>

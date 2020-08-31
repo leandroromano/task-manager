@@ -1,0 +1,3 @@
+<ng-container *ngFor="let task of tasks">
+    <app-task [description]="task.description" (deleted)="delete(task)"></app-task>
+</ng-container>
